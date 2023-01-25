@@ -16,7 +16,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <div className='flex w-screen'>
+          <ul className='w-full h-16 max-h-16 pr-32 pl-32 mt-28 mb-8 flex flex-row text-white justify-between text-center items-center bg-blue-600'>
+            <Header redirect={false}  url='/'>Adriel Bolandini</Header>
+            <Header redirect={true}  url='http://www.linkedin.com/in/adrielbolandini'>Linkedin</Header>
+            <Header redirect={true}  url='http://www.github.com/adrielbolandini'>GitHub</Header>
+          </ul>
+        </div>
+      
       <Card />
     </div>
   )
