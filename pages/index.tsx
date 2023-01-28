@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Header from '../components/Header'
 import Card from '../components/Card'
+import Button from '../components/Button'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,8 +24,11 @@ export default function Home() {
             <Header redirect={true}  url='http://www.github.com/adrielbolandini'>GitHub</Header>
           </ul>
         </div>
+      <div className='flex flex-row place-content-between'>
+        <Card />
+        <Button fnctOnClick={()=>{}}/>
+      </div>
       
-      <Card />
     </div>
   )
 }
